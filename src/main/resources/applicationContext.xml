@@ -5,8 +5,13 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Define your beans here -->
+    <bean id="myFortuneService"
+          class="com.kortov.springworkshop.HappyFortuneService">
+
+    </bean>
     <bean id="myCoach"
-          class="com.kortov.springworkshop.FootballCoach">
+          class="com.kortov.springworkshop.TrackCoach">
+        <constructor-arg ref="myFortuneService"/>
     </bean>
 
 </beans>

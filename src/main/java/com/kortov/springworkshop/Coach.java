@@ -2,4 +2,6 @@ package com.kortov.springworkshop;
 
 public interface Coach {
     String getDailyWorkout();
+
+    String getDailyFortune();
 }
