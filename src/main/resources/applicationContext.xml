@@ -9,9 +9,9 @@
 
     <!-- Define your beans here -->
     <bean id="myFortuneService"
-          class="com.kortov.springworkshop.HappyFortuneService">
-
+          class="com.kortov.springworkshop.RandomFortuneService">
     </bean>
+
     <bean id="myCoach"
           class="com.kortov.springworkshop.TrackCoach">
         <constructor-arg ref="myFortuneService"/>
