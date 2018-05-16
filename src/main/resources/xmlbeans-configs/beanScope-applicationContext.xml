@@ -6,22 +6,22 @@
 
     <!-- Define your beans here -->
     <bean id="myFortuneService"
-          class="com.kortov.springworkshop.RandomFortuneService">
+          class="com.kortov.springworkshop.xmlbeans.RandomFortuneService">
     </bean>
 
     <bean id="myCoach"
-          class="com.kortov.springworkshop.TrackCoach"
+          class="com.kortov.springworkshop.xmlbeans.TrackCoach"
           scope="prototype">
         <constructor-arg ref="myFortuneService"/>
     </bean>
 
     <bean id="myFootballCoach"
-          class="com.kortov.springworkshop.FootballCoach"
+          class="com.kortov.springworkshop.xmlbeans.FootballCoach"
           scope="singleton">
     </bean>
 
     <bean id="myBaseballCoach"
-          class="com.kortov.springworkshop.BaseballCoach"
+          class="com.kortov.springworkshop.xmlbeans.BaseballCoach"
           scope="prototype">
         <constructor-arg ref="myFortuneService"/>
     </bean>

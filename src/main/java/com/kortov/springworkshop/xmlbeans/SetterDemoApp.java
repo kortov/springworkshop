@@ -1,11 +1,11 @@
-package com.kortov.springworkshop;
+package com.kortov.springworkshop.xmlbeans;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SetterDemoApp {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("applicationContext.xml");
+                new ClassPathXmlApplicationContext("xmlbeans-configs/applicationContext.xml");
         CricketCoach theCoach = context.getBean("myCricketCoach", CricketCoach.class);
         System.out.println(theCoach.getDailyFortune());
         System.out.println(theCoach.getDailyWorkout());

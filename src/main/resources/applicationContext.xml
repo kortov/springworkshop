@@ -5,24 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:sport.properties"/>
+    <context:component-scan base-package="com.kortov.springworkshop.annotationbeans"/>
 
-    <!-- Define your beans here -->
-    <bean id="myFortuneService"
-          class="com.kortov.springworkshop.RandomFortuneService">
-    </bean>
-
-    <bean id="myCoach"
-          class="com.kortov.springworkshop.TrackCoach">
-        <constructor-arg ref="myFortuneService"/>
-    </bean>
-
-    <bean id="myCricketCoach"
-          class="com.kortov.springworkshop.CricketCoach">
-        <property name="fortuneService" ref="myFortuneService"/>
-        <property name="emailAddress" value="${foo.email}"/>
-        <property name="team" value="${foo.team}"/>
-    </bean>
 </beans>
 
 

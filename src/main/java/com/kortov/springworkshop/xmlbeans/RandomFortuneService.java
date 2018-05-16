@@ -1,4 +1,4 @@
-package com.kortov.springworkshop;
+package com.kortov.springworkshop.xmlbeans;
 
 import java.util.Random;
 

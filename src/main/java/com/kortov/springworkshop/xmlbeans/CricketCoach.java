@@ -1,4 +1,4 @@
-package com.kortov.springworkshop;
+package com.kortov.springworkshop.xmlbeans;
 
 public class CricketCoach implements Coach {
     private FortuneService fortuneService;
