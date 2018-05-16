@@ -14,6 +14,17 @@
           scope="prototype">
         <constructor-arg ref="myFortuneService"/>
     </bean>
+
+    <bean id="myFootballCoach"
+          class="com.kortov.springworkshop.FootballCoach"
+          scope="singleton">
+    </bean>
+
+    <bean id="myBaseballCoach"
+          class="com.kortov.springworkshop.BaseballCoach"
+          scope="prototype">
+        <constructor-arg ref="myFortuneService"/>
+    </bean>
 </beans>
 
 
