@@ -6,7 +6,12 @@
 
     <groupId>SpringWorkshop</groupId>
     <artifactId>SpringWorkshop</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>parent</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,12 +20,5 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>5.0.6.RELEASE</version>
-        </dependency>
-    </dependencies>
 
 </project>

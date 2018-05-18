@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:property-placeholder location="classpath:xmlbeans-configs/sport.properties/sport.properties"/>
+    <context:property-placeholder location="classpath:sport.properties"/>
 
     <!-- Define your beans here -->
     <bean id="myFortuneService"
