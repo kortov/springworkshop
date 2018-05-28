@@ -2,6 +2,7 @@ package com.kortov.springworkshop.annotationbeans;
 
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -16,8 +17,11 @@ public class FileFortuneService implements FortuneService {
     private ArrayList<String> data = new ArrayList<>();
     private Random myRandom = new Random();
 
-    public FileFortuneService() {
+    @PostConstruct
+    public void doSomeStartupStuff() {
+        System.out.println("\nStarted reading file");
         fillArray();
+        System.out.println("\nFinished reading file");
     }
 
     private void fillArray() {
