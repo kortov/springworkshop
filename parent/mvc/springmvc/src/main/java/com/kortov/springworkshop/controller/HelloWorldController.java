@@ -22,7 +22,7 @@ public class HelloWorldController {
     public String letsShoutDude(HttpServletRequest request, Model model) {
         String theName = request.getParameter("studentName");
         theName = theName.toUpperCase();
-        String result = "Yo!" + theName;
+        String result = "Yo! " + theName;
         model.addAttribute("message", result);
         return "helloworld";
     }
