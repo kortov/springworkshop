@@ -29,6 +29,13 @@
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator-parent</artifactId>
+            <version>6.0.11.Final</version>
+            <type>pom</type>
+        </dependency>
         <!--<dependency>-->
         <!--<groupId>org.springframework</groupId>-->
         <!--<artifactId>spring-orm</artifactId>-->
@@ -66,6 +73,11 @@
             <artifactId>jsp-api</artifactId>
             <version>2.1</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
         </dependency>
     </dependencies>
 
