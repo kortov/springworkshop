@@ -1,3 +1,4 @@
+<%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <html>
@@ -26,6 +27,11 @@
 
     Free passes: <form:input path="freePasses" />
     <form:errors path="freePasses" cssClass="error" />
+
+    <br><br>
+
+    Postal code: <form:input path="postalCode" />
+    <form:errors path="postalCode" cssClass="error" />
 
     <br><br>
 
