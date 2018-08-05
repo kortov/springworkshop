@@ -31,10 +31,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.hibernate.validator</groupId>
-            <artifactId>hibernate-validator-parent</artifactId>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
             <version>6.0.11.Final</version>
-            <type>pom</type>
         </dependency>
         <!--<dependency>-->
         <!--<groupId>org.springframework</groupId>-->
