@@ -16,5 +16,6 @@
   <modules>
       <module>hibernate1to1</module>
       <module>hibernatecrud</module>
+      <module>hibernate1tomany</module>
   </modules>
 </project>
