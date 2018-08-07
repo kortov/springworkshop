@@ -23,6 +23,7 @@ public class GetInstructorCoursesDemo {
             int id = 1;
             Instructor instructor = session.get(Instructor.class, id);
             System.out.println("Instructor: " + instructor);
+            session.close();
             System.out.println("Courses: " + instructor.getCourses());
             session.getTransaction().commit();
             System.out.println("Done!");
