@@ -18,11 +18,12 @@ public class DeleteInstructorDetailDemo {
 
         try {
             session.beginTransaction();
-            int id = 2;
+            int id = 3;
             InstructorDetail instructorDetail = session.get(InstructorDetail.class, id);
             System.out.println("InstructorDetail: " + instructorDetail);
             System.out.println("The assosiated instructor: " + instructorDetail.getInstructor());
             System.out.println("Deleting instructorDetail: " + instructorDetail);
+            instructorDetail.getInstructor().setInstructorDetail(null);
             session.delete(instructorDetail);
             session.getTransaction().commit();
             System.out.println("Done!");
