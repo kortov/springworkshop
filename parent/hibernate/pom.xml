@@ -17,5 +17,6 @@
       <module>hibernate1to1</module>
       <module>hibernatecrud</module>
       <module>hibernate1tomany</module>
+      <module>hibernatelazyvseager</module>
   </modules>
 </project>
