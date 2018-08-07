@@ -23,9 +23,11 @@ public class GetInstructorCoursesDemo {
             int id = 1;
             Instructor instructor = session.get(Instructor.class, id);
             System.out.println("Instructor: " + instructor);
-            session.close();
             System.out.println("Courses: " + instructor.getCourses());
             session.getTransaction().commit();
+            session.close();
+            System.out.println("Session is closed");
+            System.out.println("Courses: " + instructor.getCourses());
             System.out.println("Done!");
         } catch (Exception e) {
             e.printStackTrace();
