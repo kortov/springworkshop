@@ -94,7 +94,7 @@ public class Instructor {
     }
 
     public void add(Course course) {
-        if (courses != null) {
+        if (courses == null) {
             courses = new ArrayList<>();
         }
         courses.add(course);
