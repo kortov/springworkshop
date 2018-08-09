@@ -4,21 +4,16 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.kortov.springworkshop</groupId>
-    <artifactId>parent</artifactId>
+    <artifactId>springworkshop</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>hibernate</artifactId>
+  <artifactId>mvc</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <name>hibernate</name>
+  <name>mvc</name>
 
   <modules>
-      <module>hibernate-1-to-1</module>
-      <module>hibernate-crud</module>
-      <module>hibernate-1-to-many</module>
-      <module>hibernate-lazy-vs-eager</module>
-      <module>hibernate-1-to-many-uni</module>
-      <module>hibernate-many-to-many</module>
+      <module>springmvc</module>
+      <module>web-customer-tracker</module>
   </modules>
 </project>
