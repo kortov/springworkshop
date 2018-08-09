@@ -5,12 +5,14 @@ import com.kortov.webcustomer.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -34,9 +36,13 @@ public class CustomerController {
     }
 
     @PostMapping("/saveCustomer")
-    public String saveCustomer(@ModelAttribute("customer") Customer customer) {
-        customerService.save(customer);
-        return "redirect:list";
+    public String saveCustomer(@Valid @ModelAttribute("customer") Customer customer, BindingResult theBindingResult) {
+        if (theBindingResult.hasErrors()) {
+            return "customer-form";
+        } else {
+            customerService.save(customer);
+            return "redirect:list";
+        }
     }
 
     @GetMapping("/showFormForUpdate")
