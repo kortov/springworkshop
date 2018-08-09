@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hibernate1tomanyuni</artifactId>
+    <artifactId>hibernate-1-to-many</artifactId>
 
-    <name>hibernate1tomanyuni</name>
+    <name>hibernate1tomany</name>
     <properties>
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>

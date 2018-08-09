@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hibernatemanytomany</artifactId>
+    <artifactId>hibernate-lazy-vs-eager</artifactId>
 
-    <name>hibernatemanytomany</name>
+    <name>hibernate-lazy-vs-eager</name>
     <properties>
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>

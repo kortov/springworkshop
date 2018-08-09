@@ -14,5 +14,6 @@
 
   <modules>
       <module>springmvc</module>
+      <module>web-customer-tracker</module>
   </modules>
 </project>
