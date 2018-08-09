@@ -19,5 +19,6 @@
       <module>hibernate1tomany</module>
       <module>hibernatelazyvseager</module>
       <module>hibernate1tomanyuni</module>
+      <module>hibernatemanytomany</module>
   </modules>
 </project>
