@@ -13,6 +13,7 @@
         <module>mvc</module>
         <module>spring-config-types</module>
         <module>hibernate</module>
+        <module>aop</module>
     </modules>
 
     <dependencies>
