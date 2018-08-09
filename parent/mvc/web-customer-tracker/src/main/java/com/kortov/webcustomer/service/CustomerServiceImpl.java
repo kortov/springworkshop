@@ -18,4 +18,10 @@ public class CustomerServiceImpl implements CustomerService {
     public List<Customer> getAll() {
         return customerDAO.getAll();
     }
+
+    @Override
+    @Transactional
+    public void save(Customer customer) {
+        customerDAO.save(customer);
+    }
 }
