@@ -11,7 +11,11 @@ public class AccountDAO {
     private String name;
     private String serviceCode;
 
-    public List<Account> findAccounts() {
+    public List<Account> findAccounts(boolean tripWire) {
+
+        if (tripWire) {
+            throw new RuntimeException("No soup for you!!");
+        }
         List<Account> accounts = new ArrayList<>();
         Account account1 = new Account("John", "Silver");
         Account account2 = new Account("Madhu", "Platinum");
