@@ -2,16 +2,35 @@ package com.kortov.aop.aspect;
 
 import com.kortov.Account;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Aspect
 @Component
 @Order(2)
 public class MyDemoLoggingAspect {
+
+    @AfterReturning(
+            pointcut = "execution(* com.kortov.aop.dao.AccountDAO.findAccounts(..))",
+            returning = "result"
+    )
+    public void afterReturningFindAccountsAdvice(JoinPoint joinPoint, List<Account> result) {
+        String method = joinPoint.getSignature().toShortString();
+        System.out.println("\n=====>>> Executing @AfterReturning on method: " + method);
+
+        // print out the results of the method call
+        System.out.println("\n=====>>> result is: " + result);
+        convertAccountNamesToUpperCase(result);
+        System.out.println("\n=====>>> result is: " + result);
+    }
+
     @Before("com.kortov.aop.aspect.LuvAopExpressions.forDaoPackageNoGetterSetter()")
     public void beforeAddAccountAdvice(JoinPoint joinPoint) {
         System.out.println("\n=====>>> Executing @Before advice on method()");
@@ -25,6 +44,13 @@ public class MyDemoLoggingAspect {
                 System.out.println("Account name: " + account.getName());
                 System.out.println("Account level: " + account.getLevel());
             }
+        }
+    }
+
+    private void convertAccountNamesToUpperCase(List<Account> result) {
+        for (Account tempAccount : result) {
+            String theUpperName = tempAccount.getName().toUpperCase();
+            tempAccount.setName(theUpperName);
         }
     }
 }
