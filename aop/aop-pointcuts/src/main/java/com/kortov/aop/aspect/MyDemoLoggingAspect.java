@@ -28,8 +28,7 @@ public class MyDemoLoggingAspect {
             result = proceedingJoinPoint.proceed();
         } catch (Throwable throwable) {
             myLogger.warning(throwable.getMessage());
-            result = "Major accident! But no worries," +
-                    "your private AOP helicopter is on the way!";
+            throw throwable;
         }
         long end  = System.currentTimeMillis();
         long duration = end - begin;
