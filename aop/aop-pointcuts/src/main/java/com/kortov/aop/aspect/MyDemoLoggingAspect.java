@@ -23,7 +23,14 @@ public class MyDemoLoggingAspect {
         String method = proceedingJoinPoint.getSignature().toShortString();
         myLogger.info("\n=====>>> Executing @Around on method: " + method);
         long begin = System.currentTimeMillis();
-        Object result = proceedingJoinPoint.proceed();
+        Object result = null;
+        try {
+            result = proceedingJoinPoint.proceed();
+        } catch (Throwable throwable) {
+            myLogger.warning(throwable.getMessage());
+            result = "Major accident! But no worries," +
+                    "your private AOP helicopter is on the way!";
+        }
         long end  = System.currentTimeMillis();
         long duration = end - begin;
         myLogger.info("\n=====> Duration: " + duration / 1000.0 + " seconds");
