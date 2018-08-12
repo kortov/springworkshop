@@ -14,6 +14,7 @@
         <module>spring-config-types</module>
         <module>hibernate</module>
         <module>aop</module>
+        <module>spring-security</module>
     </modules>
 
     <dependencies>
