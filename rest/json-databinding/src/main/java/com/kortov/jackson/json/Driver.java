@@ -11,10 +11,16 @@ public class Driver {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             File file = new File(Objects.requireNonNull(Driver.class.getClassLoader()
-                    .getResource("data/sample-lite.json")).getFile());
+                    .getResource("data/sample-full.json")).getFile());
             Student student = objectMapper.readValue(file, Student.class);
             System.out.println("First name: " + student.getFirstName());
             System.out.println("Last name: " + student.getLastName());
+            Address address = student.getAddress();
+            System.out.println("Street: " + address.getStreet());
+            System.out.println("City: " + address.getCity());
+            for (String language : student.getLanguages()) {
+                System.out.println(language);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
