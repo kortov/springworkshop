@@ -29,7 +29,7 @@ public class DemoAppConfig {
     @Bean
     public ViewResolver viewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("WEB-INF/view/");
+        viewResolver.setPrefix("/WEB-INF/view/");
         viewResolver.setSuffix(".jsp");
         return viewResolver;
     }
@@ -61,7 +61,6 @@ public class DemoAppConfig {
 
     private int getIntProperty(String propName) {
         String propVal = environment.getProperty(propName);
-        int propertyValue = Integer.parseInt(propVal);
-        return propertyValue;
+        return Integer.parseInt(propVal);
     }
 }
