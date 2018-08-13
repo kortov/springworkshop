@@ -98,13 +98,13 @@
                     <div>
                         <p>
                             <button type="submit" class="btn btn-primary" onclick="setCredentials('john', 'fun123')">
-                                Зайти как User
+                                Login as User
                             </button>
                             <button type="submit" class="btn btn-primary" onclick="setCredentials('mary', 'fun123')">
-                                Зайти как Manager
+                                Login as Manager
                             </button>
                             <button type="submit" class="btn btn-primary" onclick="setCredentials('susan', 'fun123')">
-                                Зайти как Admin
+                                Login as Admin
                             </button>
                         </p>
                     </div>
