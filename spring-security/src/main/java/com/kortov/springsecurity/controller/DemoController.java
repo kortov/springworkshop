@@ -19,4 +19,9 @@ public class DemoController {
     public String showSystems() {
         return "systems";
     }
+
+    @GetMapping("/access-denied")
+    public String showAcessDenied() {
+        return "access-denied";
+    }
 }
