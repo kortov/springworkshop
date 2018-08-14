@@ -2,6 +2,7 @@ package com.kortov.springrest.controller;
 
 import com.kortov.springrest.entity.Student;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,5 +26,10 @@ public class StudentRestController {
     @GetMapping("/students")
     public List<Student> students() {
         return students;
+    }
+
+    @GetMapping("student/{studentId}")
+    public Student student(@PathVariable int studentId) {
+        return students.get(studentId);
     }
 }
