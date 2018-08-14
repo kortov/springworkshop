@@ -235,3 +235,13 @@ spring-config-types/pom.xml
 spring-config-types/spring-config-types.iml
 spring-config-types/xmlbeans/xmlbeans.iml
 springworkshop.iml
+/rest/spring-rest/spring-rest.iml
+aop/aop-pointcuts/src/main/resources/
+aop/aop-pointcuts/src/test/
+rest/json-databinding/json-databinding.iml
+rest/json-databinding/src/test/
+rest/rest.iml
+rest/spring-rest/src/main/resources/
+rest/spring-rest/src/test/
+spring-security/spring-security.iml
+spring-security/src/test/
