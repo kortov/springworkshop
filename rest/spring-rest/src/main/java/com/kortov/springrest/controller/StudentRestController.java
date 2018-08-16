@@ -1,5 +1,6 @@
 package com.kortov.springrest.controller;
 
+import com.kortov.springrest.StudentNotFoundException;
 import com.kortov.springrest.entity.Student;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,6 +31,9 @@ public class StudentRestController {
 
     @GetMapping("student/{studentId}")
     public Student student(@PathVariable int studentId) {
+        if ((studentId >= students.size()) || (studentId < 0)) {
+            throw new StudentNotFoundException("Student id not found - " + studentId);
+        }
         return students.get(studentId);
     }
 }

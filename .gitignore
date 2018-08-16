@@ -245,3 +245,4 @@ rest/spring-rest/src/main/resources/
 rest/spring-rest/src/test/
 spring-security/spring-security.iml
 spring-security/src/test/
+!/spring-config-types/pom.xml
