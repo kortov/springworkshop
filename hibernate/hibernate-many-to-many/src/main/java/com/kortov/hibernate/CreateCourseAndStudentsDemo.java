@@ -28,8 +28,8 @@ public class CreateCourseAndStudentsDemo {
             System.out.println("Saving the course " + course);
             session.save(course);
             System.out.println("Saved the course " + course);
-            Student student1 = new Student("John", "Doe", "john@luv2code.com");
-            Student student2 = new Student("Mary", "Public", "mary@luv2code.com");
+            Student student1 = new Student("John", "Doe", "john@kortov.com");
+            Student student2 = new Student("Mary", "Public", "mary@kortov.com");
             course.addStudent(student1);
             course.addStudent(student2);
             System.out.println("Saving students...");

@@ -16,7 +16,7 @@ public class CreateStudentDemo {
 
         try {
             System.out.println("Creating new student object...");
-            Student tempStudent = new Student("Paul", "Wall", "paul@luv2code.com");
+            Student tempStudent = new Student("Paul", "Wall", "paul@kortov.com");
             session.beginTransaction();
             System.out.println("Saving the student...");
             session.save(tempStudent);

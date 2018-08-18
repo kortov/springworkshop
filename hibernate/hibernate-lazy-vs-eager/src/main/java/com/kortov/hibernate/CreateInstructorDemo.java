@@ -19,7 +19,7 @@ public class CreateInstructorDemo {
         Session session = sessionFactory.getCurrentSession();
 
         try {
-            Instructor instructor = new Instructor("Susan", "Public", "susan.public@luv2code.com");
+            Instructor instructor = new Instructor("Susan", "Public", "susan.public@kortov.com");
             InstructorDetail instructorDetail = new InstructorDetail("https://www.youtube.com", "Video games");
             instructor.setInstructorDetail(instructorDetail);
             session.beginTransaction();

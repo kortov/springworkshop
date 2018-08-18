@@ -22,10 +22,10 @@ public class EagerLazyDemo {
             session.beginTransaction();
             int id = 1;
             Instructor instructor = session.get(Instructor.class, id);
-            System.out.println("luv2code: Instructor: " + instructor);
-            System.out.println("luv2code: Courses: " + instructor.getCourses());
+            System.out.println("kortov: Instructor: " + instructor);
+            System.out.println("kortov: Courses: " + instructor.getCourses());
             session.getTransaction().commit();
-            System.out.println("luv2code: Done!");
+            System.out.println("kortov: Done!");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

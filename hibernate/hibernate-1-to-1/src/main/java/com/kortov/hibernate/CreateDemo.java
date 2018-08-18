@@ -17,7 +17,7 @@ public class CreateDemo {
         Session session = sessionFactory.getCurrentSession();
 
         try {
-            Instructor instructor = new Instructor("Jimmy", "McNulty", "wtfdidido@luv2code.com");
+            Instructor instructor = new Instructor("Jimmy", "McNulty", "wtfdidido@kortov.com");
             InstructorDetail instructorDetail = new InstructorDetail("https://www.youtube.com/user/mcnulty", "wtfdidido");
             instructor.setInstructorDetail(instructorDetail);
             session.beginTransaction();

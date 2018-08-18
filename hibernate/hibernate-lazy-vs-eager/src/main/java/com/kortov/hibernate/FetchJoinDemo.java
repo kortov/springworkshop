@@ -30,7 +30,7 @@ public class FetchJoinDemo {
             session.getTransaction().commit();
             System.out.println("Session is closed");
             System.out.println("Courses: " + instructor.getCourses());
-            System.out.println("luv2code: Done!");
+            System.out.println("kortov: Done!");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

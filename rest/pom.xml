@@ -14,6 +14,7 @@
     <modules>
         <module>json-databinding</module>
         <module>spring-rest</module>
+        <module>crm-rest</module>
     </modules>
 
 
