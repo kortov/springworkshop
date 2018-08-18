@@ -52,7 +52,7 @@
     <!-- Support for Maven WAR Plugin -->
 
     <build>
-        <finalName>spring-rest-demo</finalName>
+        <finalName>spring-rest</finalName>
 
         <pluginManagement>
             <plugins>

@@ -95,7 +95,7 @@
     <!-- TO DO: Add support for Maven WAR Plugin -->
 
     <build>
-        <finalName>spring-rest-demo</finalName>
+        <finalName>spring-security</finalName>
 
         <pluginManagement>
             <plugins>
