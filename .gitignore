@@ -246,3 +246,6 @@ rest/spring-rest/src/test/
 spring-security/spring-security.iml
 spring-security/src/test/
 !/spring-config-types/pom.xml
+/aop/aop-pointcuts/aop-pointcuts.iml
+/rest/crm-rest/crm-rest.iml
+rest/crm-rest/src/test/
