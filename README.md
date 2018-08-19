@@ -3,6 +3,7 @@ Project With Spring & Hibernate
 This is a fully functional implementation of  <a href="https://www.udemy.com/spring-hibernate-tutorial/" target=_blank>Udemy Spring & Hibernate course</a>
 
 ### <a href="http://web-kortov-spring.herokuapp.com/" target=_blank>App demo</a>
+The app src is placed into mvc/web-customer-tracker module: <a href="https://github.com/kortov/springworkshop/tree/master/mvc/web-customer-tracker" target=_blank>sources</a>
 
 #### Technologies
 - Spring Core, Annotations, Java Config
