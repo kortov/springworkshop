@@ -12,6 +12,8 @@ This is a fully functional implementation of  <a href="https://www.udemy.com/spr
 - Spring REST
 - Hibernate CRUD
 - Maven
+- MySQL
+- Heroku
 
 ![screenshot_20180819_171618](https://user-images.githubusercontent.com/6348215/44309193-e62dfa80-a3d3-11e8-97a3-d26e8e9130c0.png)
 
