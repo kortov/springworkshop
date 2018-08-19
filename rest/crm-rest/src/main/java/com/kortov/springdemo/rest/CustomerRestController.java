@@ -24,7 +24,7 @@ public class CustomerRestController {
     @GetMapping("/customers/{customerId}")
     public Customer getCustomer(@PathVariable int customerId) {
         Customer customer = Optional.ofNullable(customerService.getCustomer(customerId))
-                .orElseThrow(() -> new CustomerNotFoundException("Customer id not found -" + customerId));
+                .orElseThrow(() -> new CustomerNotFoundException("Customer id not found - " + customerId));
         return customer;
     }
 
@@ -44,7 +44,7 @@ public class CustomerRestController {
     @DeleteMapping("/customers/{customerId}")
     public String deleteCustomer(@PathVariable int customerId) {
         Optional.ofNullable(customerService.getCustomer(customerId))
-                .orElseThrow(() -> new CustomerNotFoundException("Customer id not found -" + customerId));
+                .orElseThrow(() -> new CustomerNotFoundException("Customer id not found - " + customerId));
         customerService.deleteCustomer(customerId);
         return "Deleted customer id  - " + customerId;
     }
